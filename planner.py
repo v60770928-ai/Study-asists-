@@ -1,14 +1,32 @@
 
-print("Welcome to My Personal AI Study Agent!")
+print("PERSONAL AI TUTOR")
+print("Type 'exit' to stop chatting.")
 
-print("\nWhat would you like to study today?")
+while True:
+    question = input("\nYou: ").lower()
 
-goal = input("Enter your learning goal: ")
+    if question == "exit":
+        print("Tutor: Goodbye! Keep learning.")
+        break
 
-print("\nYour study plan:")
-print("1. Understand the topic:", goal)
-print("2. Study for 30 minutes")
-print("3. Practise with 5 questions")
-print("4. Review your mistakes")
+    elif "hello" in question or "hi" in question:
+        print("Tutor: Hello! What would you like to learn today?")
 
-print("\nYour study plan has been created!")
+    elif "newton" in question:
+        print("Tutor: Newton's laws explain how objects move.")
+        print("There are three laws of motion.")
+
+    elif "work" in question:
+        print("Tutor: In Physics, work is done when a force")
+        print("causes displacement in an object.")
+
+    elif "energy" in question:
+        print("Tutor: Energy is the capacity to do work.")
+
+    elif "python" in question:
+        print("Tutor: Python is a programming language")
+        print("used to build software and AI applications.")
+
+    else:
+        print("Tutor: I don't know that topic yet.")
+        print("I'll learn to handle more questions as we develop me.")
